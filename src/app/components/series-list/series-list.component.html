@@ -19,9 +19,9 @@
                 <td>{{serie.nombre}}</td>
                 <td>{{serie.descripcion}}</td>
                 <td>{{serie.protagonistas}}</td>
-                <td><button type="button" class="btn btn-danger" (click)=" borrarS(serie.id)">Eliminar</button></td>
-                <td><button type="button" class="btn btn-dark" [routerLink]="['/series/edit/',serie.id]">Actualizar</button></td>
-              
+                <td><button type="button" class="btn btn-warning" (click)=" borrarS(serie.id)">Eliminar</button></td>
+                <td><button type="button" class="btn btn-primary" [routerLink]="['/series/edit/',serie.id]">Actualizar</button></td>
+                
               </tr>
           </tbody>
       </table> 
