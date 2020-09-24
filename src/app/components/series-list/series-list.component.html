@@ -1,0 +1,28 @@
+<div class="content">
+    <a type="button" class="btn btn-success" routerLink="/series/add">Ingresar una Nueva Provincia</a>
+</div>
+<div class="content" >
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Protagonistas</th>
+            <th scope="col">Eliminar</th>
+            <th scope="col">Actualizar</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let serie of series">
+            <tr>
+                <th scope="row">{{serie.id}}</th>
+                <td>{{serie.nombre}}</td>
+                <td>{{serie.descripcion}}</td>
+                <td>{{serie.protagonistas}}</td>
+                <td><button type="button" class="btn btn-danger" (click)=" borrarS(serie.id)">Eliminar</button></td>
+                <td><button type="button" class="btn btn-dark" [routerLink]="['/series/edit/',serie.id]">Actualizar</button></td>
+              
+              </tr>
+          </tbody>
+      </table> 
+</div>
