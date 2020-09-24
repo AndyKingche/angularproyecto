@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lite": "lite-server",
-    "postinstall": "ng build --prod"
+    "postinstall": "ng build --aot --target=production"
   },
   "private": true,
   "dependencies": {
@@ -47,5 +47,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "engines": {
+    "node": "12.18.0",
+      "npm": "6.14.2"
   }
 }
