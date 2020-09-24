@@ -13,7 +13,7 @@ export class SeriesFormComponent implements OnInit {
   series : Series ={
     nombre: '',
     descripcion: '',
-    protagonistas: ' '
+    protagonistas: ''
   };
   edit: boolean = false;
 
